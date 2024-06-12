@@ -1,7 +1,11 @@
+.trip-card,
+.trip-card * {
+  font-family: "Kanit", sans-serif;
+}
+
 .trip-card {
   padding: 20px;
   text-align: left;
-  font-family: "Sarabun", sans-serif;
   margin-left: 20px;
   margin-right: 20px;
 }
@@ -85,4 +89,32 @@
 
 .trip-card button:hover {
   background-color: #0056b3;
+}
+
+.big-photo-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.big-photo-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.big-photo-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
 }

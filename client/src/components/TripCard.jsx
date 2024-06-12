@@ -87,7 +87,7 @@
 // export default TripCard;
 import React, { useState } from "react";
 import "../styles/TripCard.css"; // เรียกใช้ไฟล์ CSS สำหรับ TripCard
-import "../KanitFont.css"; // เรียกใช้ไฟล์ CSS สำหรับฟ้อนต์ Kanit
+import linkButtonIcon from "../assets/link-button.svg"; // เรียกใช้ไฟล์ link-button.svg ในโฟลเดอร์ assets
 
 function TripCard({ trip }) {
   const { title, description, photos, url, tags } = trip;
@@ -157,7 +157,14 @@ function TripCard({ trip }) {
       </div>
 
       <div className="trip-card-actions">
-        <button onClick={copyToClipboard}>Copy URL</button>
+        <a
+          href={url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="link-button"
+        >
+          <img src={linkButtonIcon} alt="Copy URL" width="20" height="20" />
+        </a>
       </div>
 
       {showBigPhoto && (

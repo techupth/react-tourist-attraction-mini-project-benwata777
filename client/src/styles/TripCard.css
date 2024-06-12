@@ -76,7 +76,7 @@
   align-items: center;
 }
 
-.trip-card button {
+/* .trip-card button {
   display: inline-block;
   margin-top: -45px;
   padding: 10px;
@@ -88,6 +88,16 @@
 }
 
 .trip-card button:hover {
+  background-color: #0056b3;
+} */
+
+.link-button {
+  background-color: #6caff6;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.link-button:hover {
   background-color: #0056b3;
 }
 

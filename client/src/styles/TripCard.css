@@ -1,13 +1,13 @@
-.trip-card,
+/* .trip-card,
 .trip-card * {
   font-family: "Kanit", sans-serif;
-}
+} */
 
 .trip-card {
   padding: 20px;
   text-align: left;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .trip-card .photos {
@@ -69,8 +69,15 @@
   cursor: pointer;
 }
 
+.box2 {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+}
+
 .trip-card .trip-card-actions {
-  width: 50%;
+  width: 80%;
+  margin-top: 65px;
   display: flex;
   justify-content: flex-end;
   align-items: center;

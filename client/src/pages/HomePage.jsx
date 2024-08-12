@@ -15,7 +15,7 @@ function HomePage() {
   const fetchTrips = async () => {
     try {
       const response = await axios.get(
-        `http://localhost:4001/trips?keywords=${search}`
+        `http://localhost:4000/trips?keywords=${search}`
       );
       setTrips(response.data.data);
     } catch (error) {
